@@ -1,0 +1,17 @@
+# compiler generated
+*.o
+*.lo
+
+# cmake generated stuff
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+# swig generated stuff
+src/jni/*.java
+src/jni/interface_wrap.*
+
+# Finder dammit.
+.DS_Store
