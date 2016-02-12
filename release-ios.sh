@@ -6,8 +6,6 @@ mkdir _xcode
 pushd _xcode
 
 cmake -DFOR_IOS=ON -G Xcode ../
-
-export ONLY_ACTIVE_ARCH=NO
 # armv7
 xcodebuild -project PortingTutorial.xcodeproj -target NativeLibrary -sdk iphoneos ARCHS='armv7' \
            -configuration Release clean build TARGET_BUILD_DIR='./_xcode/build-armv7' BUILT_PRODUCTS_DIR='./_xcode/build-armv7'
