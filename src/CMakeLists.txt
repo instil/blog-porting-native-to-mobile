@@ -24,6 +24,8 @@ if(BUILD_JAR STREQUAL OFF)
     # Sources
     NativeLibrary.h
     NativeLibrary.cc
+    Logging.h
+    Logging.cc
     
     # Jni
     ${JNI_SRCS}  

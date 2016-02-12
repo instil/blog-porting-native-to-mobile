@@ -6,16 +6,16 @@
 extern "C" {
 #endif
 
-    struct NativeObject {
+    struct Object {
         int a;
         char message[128];
     };
 
-    extern void Native_HelloWorld();
+    extern void HelloWorld();
 
-    extern int Native_AddFunction(int, int);
+    extern int AddFunction(int, int);
 
-    extern void Native_PrintStructure(const struct NativeObject * const);
+    extern void PrintStructure(const struct Object * const);
 
 #ifdef __cplusplus
 };

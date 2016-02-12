@@ -2,15 +2,18 @@
 #include "NativeLibrary.h"
 
 TEST(NativeLibrary, HelloWorld) {
-    Native_HelloWorld();
+    HelloWorld();
 }
 
 TEST(NativeLibrary, AddFunction) {
-    int result = Native_AddFunction(2, 3);
+    int result = AddFunction(2, 3);
     ASSERT_EQ(5, result);
 }
 
 TEST(NativeLibrary, PrintStructure) {
-    struct NativeObject object = { .a = 3, .message = "Hello World from Instil" };
-    Native_PrintStructure(&object);
+    struct Object object = {
+        .a = 3,
+        .message = "Hello World from Instil"
+    };
+    PrintStructure(&object);
 }
